@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+#map {
+  overflow: hidden;
+  position: fixed;
+}
+
+svg.bg {
+  overflow: hidden;
+  transform: translate(-1441px, -545px) scale(4);
+  fill: #fff !important;
+  background: #fff !important;
+  border: none;
+}
+
+svg.bg .land {
+  fill: #fff !important;
+  stroke: #654;
+  stroke-width: 0.5px;
+  filter: url("#seaShore");
+}
+
+.marker {
+  fill: #31558d;
+  fill-opacity: 0.75;
+  transition: all 0.2s ease-in-out;
+}
+
+.cc {
+  font-family: sans-serif;
+  font-size: 2px;
+  fill: red;
+}
